@@ -1,0 +1,17 @@
+h1{
+    width: 0.5vw;
+    height: 0.5vh;
+    color: rgba(123, 255, 255, .5);
+}
+h2{
+    size: 100px;
+    color: rgb(0, 0, 255);
+}
+h3{
+    size: 0.1rem ;
+    color: rgb(255, 0, 0);
+}
+p{
+    size: 0.1em;
+    color: #00FF00;
+}
