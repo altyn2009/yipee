@@ -10,3 +10,12 @@ body{
 #white{
     color: white;
 }
+div{
+    background-color: black;
+}
+.class{
+    background-color: gray;
+}
+#id{
+    background-color: white;
+}
