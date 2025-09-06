@@ -4,3 +4,9 @@ section{
 label{
     display: block;
 }
+.e{
+    display: block;
+}
+div{
+    margin: 10px;
+}
