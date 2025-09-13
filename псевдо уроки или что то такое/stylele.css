@@ -16,3 +16,9 @@ a:hover{
 .deev:first-child{
     font-style: italic;
 }
+.dich:first-child:hover{
+    background-color: black;
+}
+.dich:last-child:focus{
+    color: blueviolet;
+}
