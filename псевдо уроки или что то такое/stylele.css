@@ -22,3 +22,6 @@ a:hover{
 .dich:last-child:focus{
     color: blueviolet;
 }
+#deti:nth-child(odd){
+    color: red;
+}
