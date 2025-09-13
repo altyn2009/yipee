@@ -1,0 +1,18 @@
+#knopka:hover{
+ color: blue;
+}
+#vvod{
+    color: red;
+}
+#detei:first-child{
+    font: small-caption;
+}
+#detei:last-child{
+    font-family: sans-serif;
+}
+a:hover{
+    color: orange;
+}
+.deev:first-child{
+    font-style: italic;
+}
