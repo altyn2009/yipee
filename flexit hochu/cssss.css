@@ -42,13 +42,13 @@
     background-color: cyan;
 }
 #flx4{
-    flex: 1 0 100px;
+    flex-basis: 50%;
 }
 #flx5{
-    flex: 0 1 100px;
+    flex-grow: auto;
 }
 #flx6{
-    flex: 0 0 100px;
+    flex-basis:100px;
 }
 #flex5{
     display: flex;
@@ -64,17 +64,20 @@ a{
   font-size: 18px;
   transition: color 0.3s;
 }
-#finalflex{
+#final-flex{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
+    flex-direction: row;
 }
 #flax{
+    display: block;
     background-color: chocolate;
-    flex: 1 1 200px;
-    width: 250;
-    height: 200;
+    border: 5px solid;
+    border-color: black;
+    width: 450px;
+    height: 200px;
     box-sizing: border-box;
     text-align: center
 }
