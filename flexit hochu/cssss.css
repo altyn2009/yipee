@@ -1,0 +1,80 @@
+#block{
+    display: block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+#inline{
+    display: inline;
+    background-color: green;
+}
+#flex{
+    display: flex;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+#flex2{
+    display: flex;
+    background-color: violet;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+    align-items: end;
+    align-content: baseline;
+}
+#flex3{
+    display: flex;
+    background-color: lime;
+}
+#flx1{
+    flex: 1.2 0 100px;
+}
+#flx2{
+    flex: 0 1.2 100px;
+}
+#flx3{
+    flex: 0 0 100px;
+}
+#flex4{
+    display: flex;
+    background-color: cyan;
+}
+#flx4{
+    flex: 1 0 100px;
+}
+#flx5{
+    flex: 0 1 100px;
+}
+#flx6{
+    flex: 0 0 100px;
+}
+#flex5{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #333;
+  padding: 20px 0;
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+#finalflex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+#flax{
+    background-color: chocolate;
+    flex: 1 1 200px;
+    width: 250;
+    height: 200;
+    box-sizing: border-box;
+    text-align: center
+}
