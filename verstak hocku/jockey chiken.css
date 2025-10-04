@@ -1,0 +1,101 @@
+html{
+    background: #191919;
+}
+header{
+    background: #191919;
+    position: absolute;
+    display: flex;
+    height: 117px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    border-radius: 0px;
+}
+
+#image{
+    display: flex;
+    margin-top: 37px;
+    margin-left: 50px;
+    height: 33px;
+    width: 160px;
+}
+
+#headerstuff{
+    margin-top: 30px;
+    display: flex;
+    width: 403;
+    height: 67;
+    margin-left: 900px;
+}
+
+#one{
+    width: 49;
+    height: 27;
+    top: 20px;
+    margin-left: 20px;
+    color: #118DA8;
+;
+}
+#two{
+    width: 75;
+    height: 27;
+    top: 20px;
+    color: white;
+    margin-left: 20px;
+}
+#tri{
+    width: 51;
+    height: 27;
+    color: white;
+    top: 20px;
+    margin-left: 20px;
+}
+#for{
+    width: 68;
+    color: white;
+    height: 27;
+    top: 20px;
+    margin-left: 20px;
+}
+#main{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#anothapicture{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    width: 650;
+    height: 873.4375;
+}
+#small{
+    width: 530;
+    height: 610.578125;
+    margin-top: 131.42px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+#txt{
+    width: 526;
+    height: 176;
+    margin-top: 162.58px;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 70px;
+    line-height: 88px;
+    letter-spacing: 3.2px;
+    color: white;
+}
+span{
+    font-family: DM Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 80px;
+    line-height: 88px;
+    letter-spacing: 3.2px;
+}
+#finale{
+    margin-top: 30px;
+}
