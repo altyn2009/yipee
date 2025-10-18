@@ -1,0 +1,195 @@
+#one{
+    display: flex;
+    width: 1440px;
+    height: 65px;
+    background-color: white;
+    align-items: center;
+}
+#oneone{
+    display: flex;
+    align-items: center;
+    width: 649;
+    height: 41px;
+    margin-left: 40px;
+}
+#oneinput{
+    margin-left: 120px;
+    margin-top: 0px;
+}
+html{
+    background-color: gray;
+}
+#onetwo{
+    height: 41px;
+    width: 501px;
+    margin-left: 210px;
+    display: flex;
+    align-items: center;
+}
+.chaz{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    margin-right: 40px;
+}
+#chiz{
+    color:rgba(92, 83, 233, 1);
+}
+#kok{
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: gray;
+    width: 352px;
+    height: 41px;
+}
+input{
+    border: 0;
+}
+#da{
+    margin: 12px;
+}
+#ad{
+    width: 302px;
+}
+#gok{
+    width: 121px;
+    height: 41px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}
+#two{
+    display: flex;
+    background-color: white;
+    margin-top: 35px;
+    height: 80px;
+    width: 1440px;
+}
+#stradat{
+    display: flex;
+    height: 40px;
+    width: 497px;
+    margin-left: 48px;
+    margin-top: 20px;
+}
+#perdezh{
+    display: flex;
+    margin-top: -4px;
+    height: 20px;
+    width: 425px;
+    margin-left: 32px;
+}
+#a{
+    color: rgba(88, 86, 214, 1);
+}
+#b{
+    margin-left: 48px;
+}
+p{
+    display: block;
+}
+#gachi{
+    display: flex;
+    margin-left: 625px;
+    height: 40px;
+    width: 162px;
+    margin-top: 20px;
+    gap:8px;
+    align-items: center;
+}
+.second-button{
+    height: 40px;
+    width: 40px;
+    border: 0;
+    border-radius: 2px;
+    padding:0px;
+}
+#third-button{
+    width: 66px;
+    height: 40px;
+    background-color: rgba(92, 83, 233, 1);
+    border-radius: 2px;
+    color: white;
+    border: 0;
+}
+#three{
+    display: flex;
+    width: 1440px;
+    height: 80px;
+    margin-top: 35px;
+    background-color: white;
+    align-items: center;
+}
+#lefefe{
+    margin-left: 36px;
+}
+#efefel{
+    display: flex;
+    width: 405px;
+    height: 19px;
+    margin-left: 408.15px;
+    margin-right: 417.15px;
+    gap: 40px;
+    margin-top: -30px;
+}
+#four{
+    display: flex;
+    width: 1440px;
+    height: 80px;
+    margin-top: 35px;
+    background-color: rgba(17, 25, 40, 1);
+    align-items: center;
+    border-radius: 10px;
+}
+#machi{
+    color: white;
+}
+#fefel{
+    display: flex;
+    width: 405px;
+    height: 19px;
+    margin-left: 849.3px;
+    gap: 40px;
+    margin-top: -30px;
+}
+#five{
+    display: flex;
+    width: 1440px;
+    height: 80px;
+    margin-top: 35px;
+    background-color: rgba(17, 25, 40, 1);
+    align-items: center;
+    border-radius: 10px;
+}
+#oko{
+    display: flex;
+    margin-left: 50px;
+    height: 44px;
+    width: 500px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: rgba(214, 216, 222, 1);
+}
+#popa{
+    border: 0;
+    background-color: rgba(17, 25, 40, 1);
+    color: rgba(214, 216, 222, 1);
+    margin-left: 20px;
+    width: 400px;
+}
+#lev{
+    display: flex;
+}
+#troll{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#fefe{
+    display: flex;
+    margin-left: 299.3px;
+    gap: 40px;
+}
