@@ -1,0 +1,59 @@
+#popa{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.grid{
+    width: 380px;
+    height: 582px;
+}
+h4{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    letter-spacing: 0%;
+    color: rgb(46, 54, 62);
+    margin-top: 50px;
+    margin-left: 44px;
+}
+p{
+    color: rgb(46, 54, 62);
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-top: 12px;
+    margin-left: 44px;
+}
+h2{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgb(67, 75, 83);
+    margin-top: 24px;
+    margin-left: 44px;
+}
+button{
+    width: 163;
+    height: 68;
+    opacity: 1;
+    gap: 10px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    border-radius: 8px;
+    background-color: rgba(254, 216, 76, 1);
+    margin-top: 14px;
+    border: 0;
+    margin-left: 44px;
+}
+img{
+    width: 380px;
+    height: 245px;
+}
