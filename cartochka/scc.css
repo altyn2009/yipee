@@ -1,0 +1,254 @@
+html{
+    background-color: gray;
+}
+#one{
+    display: flex;
+    width: 1300px;
+    height: 545px;
+    border-radius: 32px;
+    background-color: black;
+}
+#onetwo{
+    display: flex;
+    width: 1220px;
+    height: 465px;
+    margin-top: 40.44px;
+    margin-left: 40px;
+}
+#gugugaga{
+    width: 389px;
+    height: 465px;
+    margin-top: -0.44px;
+}
+#gagagugu{
+    width: 778px;
+    height: 465px;
+    margin-left: 53px;
+}
+#mini{
+    width: 73px;
+    height: 27px;
+    top: 7.56px;
+}
+#mini1{
+    margin-top: 48.44px;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    color: rgba(17, 141, 168, 1);
+}
+#kakat{
+    margin-top: 17.56px;
+    color: white;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 64px;
+    line-height: 70.4px;
+    letter-spacing: 2.56px;
+    margin-bottom: 28px;
+}
+#vau{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: DM Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0%;
+    margin: 0px;
+}
+#butt{
+    margin-top: 18px;
+    width: 208px;
+    height: 51px;
+    border-radius: 6px;
+    background-color:rgba(17, 141, 168, 1);
+    border: 0;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    color: white;
+}
+#two{
+    margin-top: 100px;
+    width: 290px;
+    height: 514px;
+    background-color: rgba(225, 237, 230, 1);
+    display: flex;
+    flex-direction: column;
+}
+#inner-two{
+    width: 250px;
+    height: 464px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#cheese{
+    margin-top: 15px;
+    height: 199px;
+    width: 250px;
+}
+#anri{
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(134, 146, 139, 1);
+}
+#dama{
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+#akril{
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+#rub{
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(89, 141, 102, 1);
+
+}
+#bott{
+    height: 50px;
+    width: 250px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: 1px solid rgba(89, 141, 102, 1);
+    background-color: rgba(225, 237, 230, 1);
+    color: rgba(89, 141, 102, 1);
+}
+#three{
+    margin-top: 10px;
+    background-color: white;
+    height: 582px;
+    width: 380px;
+    border-radius: 11px;
+}
+h3{
+    margin-top: 50px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    letter-spacing: 0%;
+    color: rgba(46, 54, 62, 1);
+    margin-left: 44px;
+}
+#coc{
+    margin-top: 12px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(46, 54, 62, 1);
+    margin-left: 44px;
+}
+h5{
+    margin-top: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(67, 75, 83, 1);
+    margin-left: 44px;
+}
+#coco{
+    margin-top: -24px;
+    width: 163px;
+    height: 68px;
+    opacity: 1;
+    gap: 10px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    border-radius: 8px;
+    background-color: rgba(254, 216, 76, 1);
+    border: 0;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(46, 54, 62, 1);
+    margin-left: 44px;
+}
+#four{
+    width: 330px;
+    height: 400px;
+    margin-top: 10px;
+    background-color: rgba(12, 11, 21, 1);
+    border-radius: 10px;
+}
+#id{
+    margin-left: 27.21px;
+    margin-top: 18.3px;
+}
+#cook{
+    margin-left: 191.79px;
+    margin-top: 23px;
+}
+#od{
+    color: white;font-family: Proxima Nova;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    margin-top: 18.3px;
+}
+#di{
+    height: 100px;
+    width: 330px;
+    display: flex;
+    align-items: flex-start;
+}
+#plop{
+    margin-left: 26.5px;
+    width: 330px;
+    height: 300px;
+}
+#da{
+    font-family: Proxima Nova;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: rgba(128, 159, 184, 1);
+    margin-left: 0;
+    margin-top: 24.37px;
+}
+#hehehe{
+    font-family: Proxima Nova;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    margin-top: 26.63;
+    color: rgba(128, 159, 184, 1);
+
+}
