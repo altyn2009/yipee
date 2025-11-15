@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 header{
-    width: 1440px;
+    width: max-content;
     height: 100px;
     background-color: rgba(225, 237, 230, 1);
     display: flex;
@@ -39,6 +39,9 @@ body{
     display: flex;
     text-align: center;
     align-items: center;
+}
+header{
+    padding-right: 165px;
 }
 #coc1{
     font-family: Raleway;
@@ -109,9 +112,6 @@ body{
     padding: 0;
 }
 @media (max-width: 768px) {
-    header{
-        width: 768px;
-    }
     #logo{
         margin-right: 102px;
         margin-left: 39px;
@@ -176,9 +176,9 @@ body{
         margin-top: 0;
     }
     header{
-        width: 576px;
         height: 123px;
         display: block;
+        padding-bottom: 50px;
     }
     #main{
         width: 576px;
@@ -316,7 +316,6 @@ body{
         margin-top: 0;
     }
     header{
-        width: 320px;
         height: 130px;
         display: block;
     }
