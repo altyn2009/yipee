@@ -17,6 +17,9 @@
         font-family: 'Courier New', Courier, monospace;
     }
 }
+h1{
+    animation: chaos 0.5s infinite;
+}
 #one{
     font-family: "Raleway";
 }
