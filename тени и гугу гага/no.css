@@ -1,0 +1,19 @@
+#a{
+    background-color: gray;
+    box-shadow: 5px 5px black;
+    height: 100px;
+    width: 100px;
+}
+#b{
+    text-shadow: 1px 1px red;
+}
+#c{
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(red, blue);
+}
+#d{
+    height: 100px;
+    width: 100px;
+    background: radial-gradient(yellow, cyan);
+}
