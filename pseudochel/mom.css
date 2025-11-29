@@ -1,17 +1,17 @@
-#one::before{
+#body_first-example::before{
     content: "bye";
     color: white;
     background-color: red;
 }
-#two::after{
+#body_second-example::after{
     content: "♘";
 }
-#three{
+#body_thrird-example{
     height: 100px;
     width: 100px;
     background-color: black;
 }
-#three::before{
+#body_thrird-example::before{
     content: "e";
     float: left;
     background-color: yellow;
@@ -19,7 +19,7 @@
     width: 10px;
     height: 100px;
 }
-#three::after{
+#body_thrird-example::after{
     content: "e";
     float: right;
     background-color: yellow;
