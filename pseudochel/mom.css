@@ -1,0 +1,29 @@
+#one::before{
+    content: "bye";
+    color: white;
+    background-color: red;
+}
+#two::after{
+    content: "♘";
+}
+#three{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+#three::before{
+    content: "e";
+    float: left;
+    background-color: yellow;
+    color: yellow;
+    width: 10px;
+    height: 100px;
+}
+#three::after{
+    content: "e";
+    float: right;
+    background-color: yellow;
+    color: yellow;
+    width: 10px;
+    height: 100px;
+}
