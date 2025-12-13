@@ -29,3 +29,13 @@ print(a/c != 5)
 
 print(10 == "10")
 print(10 === "10")
+
+// 6
+
+
+if((x%3==0 || x%2==0) && x%6!=0){
+    print("true")
+}
+if(x<10 && x>5){
+    print("false")
+}
