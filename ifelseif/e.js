@@ -61,17 +61,3 @@ if(one == two){
 }else{
     one>two? print("the first number is bigger"):print("the second number is bigger")
 }
-
-// bonus
-
-let month = prompt("choose the month number(1-12)")
-switch(month){
-    case month < 3 || month > 11:
-        print("winter")
-    case month < 6 && month > 2:
-        print("spring")
-    case month < 9 && month > 5:
-        print("summer")
-    case month < 12 && month > 8:
-        print("autumn")
-}
