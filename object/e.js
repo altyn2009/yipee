@@ -10,7 +10,7 @@ console.log(person["name"])
 console.log(person["age"])
 person["city"] = "astana"
 //3
-person["greet"]=console.log("Привет, меня зовут, ", person["name"], ", мне ", person["age"], " лет!")
+person.greet=function(){console.log("Привет, меня зовут, ", person["name"], ", мне ", person["age"], " лет!")}
 //4
 obj1 = { a: 10, b: 20 }
 obj2 = { a: 10, b: 20 }
