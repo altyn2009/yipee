@@ -17,8 +17,8 @@ function sum(one, two){
 sum(1, 2)
 
 // 4
-function isEven(a, b){
-    console.log(a===b)
+function isEven(a){
+    console.log(a%2==0)
 }
 isEven(1, 3)
 
@@ -53,4 +53,5 @@ function cube(a){
 console.log(cube(3))
 
 // 8
-function sum(a, b){console.log(a+b)}
+function sum(a, b){console.log(a+b)}//выглядит как стрелочная функция
+sum(1, 2)
