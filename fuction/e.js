@@ -23,7 +23,7 @@ function isEven(a){
 isEven(1, 3)
 
 // 5
-function max(a, b){
+max = (a, b) => {
     if(a==b){
         console.log("Числа равны")
     }else if(a>b){
