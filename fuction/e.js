@@ -53,5 +53,5 @@ function cube(a){
 console.log(cube(3))
 
 // 8
-const sum = (a, b)=>{console.log(a+b)}//выглядит как стрелочная функция
+const sum = (a, b)=>{console.log(a+b)}// i kaka
 sum(1, 2)
