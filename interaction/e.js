@@ -37,5 +37,5 @@ list.addEventListener("click", function(event){
 })
 const e = document.getElementById("keyboardInput")
 addEventListener("keydown", function(event){
-    console.log(event.key)
+    console.log(event.code)
 })
