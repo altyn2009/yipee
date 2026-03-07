@@ -1,0 +1,107 @@
+#head{
+    display: flex;
+    width: 1440px;
+    height: 84px;
+    align-items: center;
+}
+#inner-head{
+    display: flex;
+    width: 588px;
+    justify-content: space-between;
+    height: 24px;
+}
+#button-primary-custom{
+    background-color: rgba(76, 175, 79, 1);
+}
+#button-secondaty-custom{
+    color: rgba(76, 175, 79, 1);
+}
+#logo{
+    margin-left: 105px;
+}
+#inner-head{
+    margin-left: 166.01px;
+}
+#button-bundle{
+    margin-left: 124.5px;
+}
+#start{
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 64px;
+    line-height: 76px;
+    letter-spacing: 0%;
+}
+#green{
+    color: rgba(76, 175, 79, 1);
+}
+#inner-main1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#button-primary-custom1{
+    background-color: rgba(76, 175, 79, 1);
+    height: 52px;
+    width: 158px;
+    color: white;
+}
+#client{
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+#oc{
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+h1{
+    font-family: Inter;
+}
+p{
+    font-family: Inter;
+}
+#coc{
+    justify-content: space-evenly;
+}
+#popa{
+    border: 0;
+}
+#imga{
+    text-align: center;
+}
+#end{
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0%;
+}
+#cheese{
+    height: 52px;
+    width: 151px;
+    background-color: rgba(76, 175, 79, 1);
+    color: white;
+}
+#pok{
+    color: rgba(76, 175, 79, 1);
+}
+#kop{
+    justify-content: space-evenly;
+}
+#lottext{
+    margin-left: 78px;
+}
+#kok{
+    color: rgba(76, 175, 79, 1);
+}
+#f{
+    margin-top: 32px;
+}
