@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+        const second2 = setTimeout(() => console.log('привет мир'), 2000);
+
+        const time = setInterval(() => console.log('час:',hours,'минута:',minutes,'секунда:',seconds));
+
+        setTimeout(() => {
+            clearInterval(time);
+        }, 5000);
+
+        const fetchData = new Promise((resolve, reject) => {
+        success = true;
+        if (success) {
+            setTimeout(() => {
+                resolve("Данные получены!");
+            }, 3000);
+        } else {
+            reject('Произошла ошибка.');
+        }
+        });
+        fetchData
+        .then(result => console.log(result))
+        .catch(error => console.log(error));
+
+        const fetchDataWithError = new Promise((resolve, reject) => {
+        success = false;
+        if (success) {
+            resolve("а как");
+        } else {
+            setTimeout(() => {
+                reject("Ошибка загрузки!");
+            }, 2000);
+        }
+        });
+        fetchDataWithError
+        .then(result => console.log(result))
+        .catch(error => console.log(error));
+
+        async function fetchDataAsync() {
+            try {
+                const response = await fetchData;
+                const data = await response.json();
+                console.log(data);
+            } catch (error) {
+                console.log('Ошибка:', error);
+            }
+        }
+        fetchDataAsync(); 
+
+        async function fetchDataWithErrorAsync() {
+            try {
+                const response = await fetchDataWithError;
+                const data = await response.json();
+                console.log(data);
+            } catch (error) {
+                console.log('Ошибка:', error);
+            }
+        }
+        setTimeout(() => {
+            fetchDataWithErrorAsync(); 
+        }, 5000);
+
+        const task1 = new Promise((resolve, reject) => {
+        success = true;
+        if (success) {
+            resolve('Операция успешна!');
+        } else {
+            reject('Произошла ошибка.');
+        }
+        });
+        setTimeout(() => {
+            task1
+            .then(result => console.log(result))
+            .catch(error => console.log(error));
+        }, 1000);
+            
+        const task2 = new Promise((resolve, reject) => {
+        success = true;
+        if (success) {
+            resolve('Операция успешна!');
+        } else {
+            reject('Произошла ошибка.');
+        }
+        });
+        setTimeout(() => {
+            task2
+            .then(result => console.log(result))
+            .catch(error => console.log(error));
+        }, 2000);
+        
+        const taskA = new Promise((resolve, reject) => {
+        success = true;
+            setTimeout(() =>{
+                if (success) {
+                    resolve('Операция успешна!');
+                } else {
+                    reject('Произошла ошибка.');
+                }
+            }, 2000)
+        });
+        taskA
+        .then(result => console.log(result))
+        .catch(error => console.log(error));
+
+        const taskB = new Promise((resolve, reject) => {
+        success = true;
+            setTimeout(() =>{
+                if (success) {
+                    resolve('Операция успешна!');
+                } else {
+                    reject('Произошла ошибка.');
+                }
+            }, 3000)
+        });
+        taskB
+        .then(result => console.log(result))
+        .catch(error => console.log(error));
+
+        success = prompt("do you want a message(yes=>1/true, no=>0/false)?");
+        if(success){
+            time = prompt("in how much time should it work(1000=>1 second)?");
+        }
+        const delayedMessage = new Promise((resolve, reject) => {
+            setTimeout(() =>{
+
+                if (success) {
+                    resolve('Операция успешна!');
+                } else {
+                    reject('Произошла ошибка.');
+                }
+            }, time)
+        });
+        if(success){
+            delayedMessage
+            .then(result => console.log(result))
+            .catch(error => console.log(error));
+        }
+    </script>
+</body>
+</html>
