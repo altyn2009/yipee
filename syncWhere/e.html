@@ -7,13 +7,15 @@
 </head>
 <body>
     <script>
-        const now = new Date();
-        const hours = now.getHours();
-        const minutes = now.getMinutes();
-        const seconds = now.getSeconds();
         const second2 = setTimeout(() => console.log('привет мир'), 2000);
 
-        const time = setInterval(() => console.log('час:',hours,'минута:',minutes,'секунда:',seconds));
+        const time = setInterval(() => {
+            now = new Date();
+            hours = now.getHours();
+            minutes = now.getMinutes();
+            seconds = now.getSeconds();
+            console.log('час:',hours,'минута:',minutes,'секунда:',seconds)
+        });
 
         setTimeout(() => {
             clearInterval(time);
@@ -84,21 +86,32 @@
             .then(result => console.log(result))
             .catch(error => console.log(error));
         }, 1000);
-            
-        const task2 = new Promise((resolve, reject) => {
-        success = true;
-        if (success) {
-            resolve('Операция успешна!');
-        } else {
-            reject('Произошла ошибка.');
+
+        async function Task1() {
+        try {
+            const response = await fetch('https://guthib');
+            const data = await response.json();
+            console.log(data);
+        } catch (error) {
+            console.log('Ошибка:', error);
         }
-        });
-        setTimeout(() => {
-            task2
-            .then(result => console.log(result))
-            .catch(error => console.log(error));
-        }, 2000);
-        
+        }
+        setTimeout(() =>{
+            Task1();
+        }, 1000)
+
+        async function Task2() {
+        try {
+            const response = await fetch('https://guthib');
+            const data = await response.json();
+            console.log(data);
+        } catch (error) {
+            console.log('Ошибка:', error);
+        }
+        }
+        setTimeout(() =>{
+            Task2();
+        }, 2000)
         const taskA = new Promise((resolve, reject) => {
         success = true;
             setTimeout(() =>{
@@ -112,7 +125,6 @@
         taskA
         .then(result => console.log(result))
         .catch(error => console.log(error));
-
         const taskB = new Promise((resolve, reject) => {
         success = true;
             setTimeout(() =>{
@@ -126,10 +138,11 @@
         taskB
         .then(result => console.log(result))
         .catch(error => console.log(error));
+        const values = Promise.all([taskA, taskB]);
 
         success = prompt("do you want a message(yes=>1/true, no=>0/false)?");
         if(success){
-            time = prompt("in how much time should it work(1000=>1 second)?");
+            time = int(prompt("in how much time should it work(in seconds)?"))*1000;
         }
         const delayedMessage = new Promise((resolve, reject) => {
             setTimeout(() =>{
