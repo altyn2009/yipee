@@ -15,7 +15,7 @@
             minutes = now.getMinutes();
             seconds = now.getSeconds();
             console.log('час:',hours,'минута:',minutes,'секунда:',seconds)
-        });
+        }, 1000);
 
         setTimeout(() => {
             clearInterval(time);
@@ -96,9 +96,6 @@
             console.log('Ошибка:', error);
         }
         }
-        setTimeout(() =>{
-            Task1();
-        }, 1000)
 
         async function Task2() {
         try {
@@ -109,9 +106,16 @@
             console.log('Ошибка:', error);
         }
         }
-        setTimeout(() =>{
-            Task2();
-        }, 2000)
+        function taskUlt(){
+            setTimeout(() =>{
+                Task1();
+            }, 1000)
+
+            setTimeout(() =>{
+                Task2();
+            }, 2000)
+        }
+        taskUlt()
         const taskA = new Promise((resolve, reject) => {
         success = true;
             setTimeout(() =>{
