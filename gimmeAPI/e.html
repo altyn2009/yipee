@@ -8,7 +8,9 @@
 <body>
     <script>
         fetch("https://jsonplaceholder.typicode.com/posts/1")
+        .then(response => response.json())
         .then(data => console.log(data))
+
         fetch("https://jsonplaceholder.typicode.com/posts", {method:'POST', title: "Новый пост", body: "Содержимое поста", userId: 1 })
         .then(Response => console.log(Response))
 
@@ -24,11 +26,14 @@
         fetchData(); 
 
         fetch("https://jsonplaceholder.typicode.com/posts/1", {method:'PUT', title: "Очень новый пост"})
+        .then(response => response.json())
         .then(data => console.log(data))
         fetch("https://jsonplaceholder.typicode.com/posts/1", {method:'DELETE'})
+        .then(response => response.json())
         .then(data => console.log(data))
         
         fetch("https://jsonplaceholder.typicode.com/comments", {method:'PUT', title:'User-Agent'})
+        .then(response => response.json())
         .then(data => console.log(data))
     </script>
 </body>
