@@ -12,13 +12,11 @@
         .then(data => console.log("successfully reseaved the info:", data))
 
         fetch("https://jsonplaceholder.typicode.com/posts", {method:'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({title: "Новый пост",  userId: 1 })})
-        .then(Response => response.json())
         .then(data => console.log("successfully posted the info:", data))
 
         function fetchData() {
         try {
             const response = fetch("https://jsonplaceholder.typicode.com/nonexistent")
-            const data = response.json();
         } catch (error) {
             console.error("error:", error);
         }
