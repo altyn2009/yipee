@@ -6,14 +6,16 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="loading">loading...</h1>
     <ul id="userList">
 
     </ul>
     <script>
+        //1
         // AJAX позволяет менять сайт без обновления страницы, и это позволяет менять страницу в зависимости от ситуаций
 
 
-
+        //2, 4
         const xhr = new XMLHttpRequest();
         xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
         xhr.onload = function() {
@@ -29,27 +31,31 @@
         xhr.send();
 
 
-
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            const data = JSON.parse(xhr.responseText);
+    //3, 4, 5(inside)
+    const e = new XMLHttpRequest();
+    e.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+    e.onload = function() {
+        if (e.status === 200) {
+            const data = JSON.parse(e.responseText);
             const userList = document.getElementById('userList');
             data.forEach(user => {
                 const listItem = document.createElement('li');
-                listItem.textContent = `${user}`;
+                listItem.textContent = `${user.id})${user.tittle}:${user.body}`;
                 userList.appendChild(listItem);
             });
+                                                                                            //5
+            loading = document.getElementById("loading")
+            loading.style.display = "none"
         } else {
-            console.error('Ошибка загрузки данных:', xhr.status);
+            console.error('Ошибка загрузки данных:', e.status);
         }
     };
-    xhr.onerror = function() {
+    e.onerror = function() {
         console.error('Ошибка соединения');
     };
-    xhr.send();
+    e.send();
     
+
     </script>
 </body>
 </html>
