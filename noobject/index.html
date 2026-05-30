@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Новости</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\css\index.css">
+</head>
+<body>
+    <header class="header">
+        <a href="e.html" class="header_logo">
+            <img src=".\img\Logo.png" alt="Логотип" />
+        </a>
+        <nav class="header_nav">
+            <ol class="header_nav-list">
+                <li>
+                    <a href="e.html" class="header_nav-link header_nav-link-active" aria-current="page">Новости</a>
+                </li>
+                <li>
+                    <a href="./categories.html" class="header_nav-link">Категории</a>
+                </li>
+            </ol>
+        </nav>
+        <div class="header_auth">
+            <a href="./login.html" class="button button-blue">Войти</a>
+        </div>
+    </header>
+    <main>
+        <div class="news-grid">
+            <article class="news-card">
+                <div class="news-card_image">
+                    <img
+                        src="https://tengrinews.kz/userdata/news/2024/news_551682/thumb_b/photo_490428.jpeg.webp"
+                        alt="Пенсионные отчисления казахстанцев: Минтруда упразднит один из видов госуслуг"
+                    />
+                </div>
+                <div class="news-card_content">
+                    <a class="news-card link" href="./detail-news.html?id=1">
+                        <h2 class="news-card_title">
+                            Пенсионные отчисления казахстанцев: Минтруда упразднит один из видов госуслуг
+                        </h2>
+                        <p class="news-card_attributes">
+                            21.10.2024 г. • Спорт
+                        </p>
+                    </a>
+                    <div>
+                        <div class="news-card_author">
+                            <div class="user" >
+                                <div class="user_avatar">
+                                    <img src="https://i.pravatar.cc/150?u-admin@admin.com"alt="Аватар">
+                                </div>
+                                <p class="user_name">Администратор</p>
+                            </div>
+                        </div>
+                        <div class="news-card_actions">
+                            <a href=".Adit-news.html?id=1" class="button button-blue button-small">Редактировать</a>
+                            <button
+                                type="button"
+                                class="button button-red button-small"
+                                onclick="deletellews(1)">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teachable Machine | Распознавание</title>
+  
+  <style>
+    /* --- Стилизация страницы --- */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Главный контейнер (карточка) */
+    .app-container {
+      background-color: #ffffff;
+      max-width: 400px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    /* Стили кнопки */
+    button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #219653;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    /* Контейнер для веб-камеры */
+    #webcam-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #webcam-container canvas {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Стили для результатов (лейблов) */
+    #label-container {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .prediction-row {
+      display: flex;
+      justify-content: space-between;
+      background: #f8f9fa;
+      padding: 12px 15px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      border-left: 4px solid #27ae60;
+    }
+    
+    .prediction-name {
+      color: #2c3e50;
+    }
+    
+    .prediction-value {
+      color: #27ae60;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <h1>Определитель мусора</h1>
+    <button type="button" id="start-btn" onclick="init()">Включить камеру</button>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+  </div>
+
+  <script src="./tf.min.js"></script>
+  <script src="./teachablemachine-image.min.js"></script>
+  
+  <script type="text/javascript">
+    // Возвращаем локальный путь к папке с моделью
+    const URL = "./my_model/";
+
+    let model, webcam, labelContainer, maxPredictions;
+
+    async function init() {
+      // Прячем кнопку после нажатия, чтобы не нажать дважды
+      document.getElementById("start-btn").style.display = "none";
+      
+      const modelURL = URL + "model.json";
+      const metadataURL = URL + "metadata.json";
+
+      try {
+        model = await tmImage.load(modelURL, metadataURL);
+        maxPredictions = model.getTotalClasses();
+
+        const flip = true; 
+        webcam = new tmImage.Webcam(300, 300, flip); // Увеличил размер камеры для красоты
+        await webcam.setup(); 
+        await webcam.play();
+        window.requestAnimationFrame(loop);
+
+        document.getElementById("webcam-container").appendChild(webcam.canvas);
+        
+        labelContainer = document.getElementById("label-container");
+        for (let i = 0; i < maxPredictions; i++) {
+          let row = document.createElement("div");
+          row.className = "prediction-row";
+          labelContainer.appendChild(row);
+        }
+      } catch (error) {
+        console.error("Ошибка загрузки модели:", error);
+        alert("Не удалось загрузить модель. Убедитесь, что ссылка (URL) правильная и ведет в облако.");
+        document.getElementById("start-btn").style.display = "block"; // Возвращаем кнопку при ошибке
+      }
+    }
+
+    async function loop() {
+      webcam.update(); 
+      await predict();
+      window.requestAnimationFrame(loop);
+    }
+
+    async function predict() {
+      const prediction = await model.predict(webcam.canvas);
+      for (let i = 0; i < maxPredictions; i++) {
+        // Переводим доли (0.95) в удобные проценты (95%)
+        const className = prediction[i].className;
+        const probability = Math.round(prediction[i].probability * 100) + "%";
+        
+        // Красивый вывод с разделением имени и значения
+        labelContainer.childNodes[i].innerHTML = `
+          <span class="prediction-name">${className}</span>
+          <span class="prediction-value">${probability}</span>
+        `;
+      }
+    }
+  </script>
+
+</body>
+</html>
