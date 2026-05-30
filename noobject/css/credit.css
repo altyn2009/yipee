@@ -1,0 +1,63 @@
+main{
+    padding: 0 220px 0 220px;
+}
+p{
+    color: rgb(189, 189, 189);
+}
+input{
+    width: 1000px;
+    height: 56px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 12px;
+    gap: 10px;
+    padding: 16px;
+}
+textarea{
+    width: 1000px;
+    height: 56px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 12px;
+    gap: 10px;
+    padding: 16px;
+}
+button{
+    background-color: rgba(0, 119, 182, 1);
+    border: 0;
+    color: white;
+}
+.create{
+    width: 195px;
+    height: 48px;
+    border-radius: 8px;
+    gap: 10px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    margin-top: 24px;
+}
+.content{
+    width: 1000px;
+    height: 300px;
+    gap: 4px;
+}
+.file{
+    width: 1000px;
+    height: 42px;
+    gap: 0;
+    padding: 0;
+    border-width: 1px;
+    border-radius: 8px;
+    background-color: rgba(230, 230, 230, 1);
+    border: 0;
+}
+.file[type="file"]::file-selector-button {
+    width: 138px;
+    height: 42px;
+    border: 0;
+    background-color: rgba(0, 119, 182, 1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0;
+    margin-right: 16px;
+}
