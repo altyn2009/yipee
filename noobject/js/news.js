@@ -8,14 +8,14 @@ const BASE_URL="https://webfinalapi.mobydev.kz";
 async function fetchAndRenderNewsById(newsId) {
     try {
         const response = await fetch(`${BASE_URL}/news/${newsId}`);
-        if (!response.ok) throw new Erгог (`Ошибка НТТР: ${response.status}`);
-            const news = await response.json();
-            document.querySelector('.news-title').textContent = news.title;
-            document.querySelector('.news-author').textContent = news.author.name || "Неизвестный автор";
-            document.querySelector('.news-date').textContent = new Date (news.createdAt).toLocaleDateString();
-            document.querySelector('.news-category').textContent = news.category.name;
-            document.querySelector('.news-image').src=`${BASE_URL}${news.thumbnail}`;
-            document.querySelector('.news-content').textContent = news.content;
+        if (!response.ok) throw new Error (`Ошибка HTTP: ${response.status}`);
+        const news = await response.json();
+        document.querySelector('.news-title').textContent = news.title;
+        document.querySelector('.news-author').textContent = news.author.name || "Неизвестный автор";
+        document.querySelector('.news-date').textContent = new Date (news.createdAt).toLocaleDateString();
+        document.querySelector('.news-category').textContent = news.category.name;
+        document.querySelector('.news-image').src=`${BASE_URL}${news.thumbnail}`;
+        document.querySelector('.news-content').textContent = news.content;
     } catch (error) {
         console.error('Ошибка при получении новости:, егror');
     }

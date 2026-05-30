@@ -13,7 +13,7 @@ async function fetchAndRenderNews() {
                     />
                 </div>
                 <div class="news-card_content">
-                    <a class="news-card link" href="./detail-news.html?id=${news.id}">
+                    <a class="news-card link" href="./news.html?id=${news.id}">
                         <h2 class="news-card_title">${news.title}</h2>
                         <p class="news-card_attributes">
                             ${news.createdAt} • ${news.category.name || "Категория"}

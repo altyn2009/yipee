@@ -1,0 +1,21 @@
+main{
+    padding: 0 200px 0 200px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.box1{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+.news-edit{
+    background-color: white;
+    border: 0;
+}
+.news-delete{
+    background-color: white;
+    border: 0;
+}
