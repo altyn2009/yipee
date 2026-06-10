@@ -24,6 +24,7 @@ button{
     background-color: rgba(0, 119, 182, 1);
     border: 0;
     color: white;
+    margin-top: 24px;
 }
 .create{
     width: 195px;
@@ -41,7 +42,7 @@ button{
     height: 300px;
     gap: 4px;
 }
-.file{
+.cover-input{
     width: 1000px;
     height: 42px;
     gap: 0;
@@ -51,7 +52,16 @@ button{
     background-color: rgba(230, 230, 230, 1);
     border: 0;
 }
-.file[type="file"]::file-selector-button {
+.category-input{
+    width: 1000px;
+    height: 56px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 12px;
+    gap: 10px;
+    padding: 16px;
+    color: rgb(189, 189, 189);
+}
+.cover-input[type="file"]::file-selector-button{
     width: 138px;
     height: 42px;
     border: 0;
@@ -60,4 +70,5 @@ button{
     border-bottom-left-radius: 8px;
     padding: 0;
     margin-right: 16px;
+    color: white;
 }

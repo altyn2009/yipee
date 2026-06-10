@@ -28,28 +28,27 @@
     </header>
     <main>
         <form class="container">
-            <h2 class="add-news">Создание новости</h2>
+            <h2 class="add-news">Редактирование новости</h2>
             <div class="box">
                 <p class="news-паве">Название</p>
                 <input
-                    class="name-input"
-                    type="text"
-                    placeholder="Beедите название"
-                >
+                class="name-input"
+                type="text"
+                placeholder="Bведите название">
             </div>
             <div class="box">
-                <p class="news-category"> Категория</p>
+                <p class="news-category">Категория</p>
                 <select class="category-input" name="category" id="category">
-                    <option value="1">string1</option>
+                    <option value="1">string</option>
                     <option value="2">Спорт</option>
-                    <option value="3">Политика</Option>
+                    <option value="3">Политика</option>
                 </select>
             </div>
             <div class="box">
-                <p class="news-cover">Обложка</p>
+                <p class="news-cover"> Обложка</p>
                 <input
-                    class="cover-input"
-                    type="file"
+                class="cover-input"
+                type="file"
                 >
             </div>
             <div class="box">
@@ -57,12 +56,12 @@
                 <textarea
                     class="content-input"
                     cols="50"
-                    rows="8"
-                ></textarea>
+                    rows="8">
+                </textarea>
             </div>
-            <button class="button button-blue">Добавить новость</button>
+            <button class="button button-blue">Сохранить новость</button>
         </form>
     </main>
-    <script src="./js/create.js"></script>
+    <script src="./js/edit.js"></script>
 </body>
 </html>

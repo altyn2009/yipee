@@ -6,13 +6,13 @@ html{
     margin-left: 56px;
 }
 .category{
-display: flex;
-justify-content: space-between;
-height: 70px;
-align-items: center;
-text-align: center;
-width: 1328px;
-margin-left: 56px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+    width: 1328px;
+    margin-left: 56px;
 }
 .category-category{
     display: block;
